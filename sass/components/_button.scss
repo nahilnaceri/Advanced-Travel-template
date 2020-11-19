@@ -30,6 +30,22 @@
         &::after{
             background-color: $color-white;
         }
+        &-1 {
+            color: $color-secondary-dark;
+        }
+        &-2{
+            color: $color-tertiary-dark;
+        }
+        &-3{
+            color: $primary-color;
+        }
+    }
+    &--green {
+        background-color: $primary-color;
+        color: $color-white;
+        &::after{
+            background-color: $primary-color;
+        }
     }
     
     &::after {
