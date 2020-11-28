@@ -36,12 +36,25 @@
         transform: translate(-50%,-50%) scale(.25);
         overflow: hidden;
         transition: all .5s .2s;
+
+        @include respond(tab-port){
+            display: block;
+            height: 90%;
+        }
+
         
     }
 
     &__left{
         width: 33.3333%;
         display: table-cell;
+        @include respond(tab-port){
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            height: 33.3333%;
+        }
+
         
     }
     &__right {
@@ -49,12 +62,25 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include respond(tab-port){
+            display: block;
+            width: 90%;
+            height: 66.6667%;
+        }
+ 
         
 
     }
     &__image{
         display: block;
         width: 100%;
+        @include respond(tab-port){
+            display: inline-block;
+            width: 49%;
+            
+        }
+
+
     }
     &__text {
         font-size: 1.4rem;
